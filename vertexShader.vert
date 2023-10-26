@@ -15,11 +15,10 @@ struct LightSource{
      vec3 Position;
      vec3 Color;
      float specularCoefficient; //intensity of specular lighting
-
+     
 }
 
 uniform LightSource Light[NUM_LIGHTS];
-float ambientCofficient = 0.01
 
 float fresnelSchlick(f0, HdotV){
      return f0 + (1.0-f0)*pow((1.0-HdotV), 5.0);
